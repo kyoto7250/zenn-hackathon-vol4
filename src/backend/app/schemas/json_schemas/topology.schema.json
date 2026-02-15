@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/topology.schema.json",
+  "title": "Kubernetes Visualization Topology",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "mermaid"],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "mermaid": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}
